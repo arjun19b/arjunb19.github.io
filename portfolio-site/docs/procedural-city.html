@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Document: Procedural City Generator</title>
+  <link href="../style.css" rel="stylesheet" />
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="nav-brand" href="../index.html"><span class="dot"></span> Arjun K. Bhatia</a>
+      <nav class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="../projects.html">Showcase</a>
+        <a class="btn" href="mailto:abhatia88@gatech.edu">Email me</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <h2>Procedural City Generator (Unity)</h2>
+      <p><strong>Context:</strong> Semester project focusing on designing a seed‑based 3D environment generator with modular meshes and AI‑driven variations.</p>
+      <p>This document outlines the problem space, design goals, and engineering decisions. It explains the mesh generation pipeline, street graph creation (4‑way, T‑junction, turns, dead ends), and a system for building footprints, facades, and elevations. It also summarizes a creature generation subsystem with swappable parts and curved surfaces.</p>
+      <h3>Key Design Choices</h3>
+      <ul>
+        <li>Seed‑driven determinism for reproducible worlds.</li>
+        <li>Polygon mesh approach for buildings with parametric facades.</li>
+        <li>Composable street tiles enabling complex layouts.</li>
+      </ul>
+      <h3>Results</h3>
+      <ul>
+        <li>Interactive city layouts generated in seconds.</li>
+        <li>Consistent performance with scalable complexity.</li>
+      </ul>
+      <blockquote class="tip">This write‑up is designed for reviewers to understand how the work demonstrates technical communication: audience‑aware explanations, visual support, and structured sections.</blockquote>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">© Arjun K. Bhatia</div>
+  </footer>
+</body>
+</html>
