@@ -84,4 +84,40 @@ blockquote.tip{margin:14px 0;padding:12px 14px;border-left:4px solid var(--brand
   justify-content: center;
   margin: 0 40px;
 }
+/* Resume PDF viewer */
+.resume-viewer .pdf-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+.resume-viewer .pdf-title { margin: 0; }
+.resume-viewer .pdf-actions { display: flex; gap: 8px; flex-wrap: wrap; }
+
+.resume-viewer .pdf-frame {
+  width: 100%;
+  height: calc(100vh - 220px); /* fits viewport under header/footer; tweak if needed */
+  background: #111;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 8px 28px rgba(0,0,0,0.25);
+}
+
+/* object and iframe fill the frame */
+.resume-viewer object,
+.resume-viewer iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Print: just print the PDF page cleanly */
+@media print {
+  header, footer, .pdf-toolbar { display: none !important; }
+  .resume-viewer .pdf-frame { height: auto; box-shadow: none; border-radius: 0; }
+}
+
 
