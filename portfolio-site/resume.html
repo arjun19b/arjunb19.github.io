@@ -20,63 +20,39 @@
     </div>
   </header>
 
-  <main class="section">
-    <div class="container resume-section">
-      <h2>Résumé</h2>
-      <p class="tag">(302) 544-2105 · <a href="mailto:abhatia88@gatech.edu">abhatia88@gatech.edu</a> · US Citizen</p>
-
-      <h3>Education</h3>
-      <div class="row"><strong>Georgia Institute of Technology · Atlanta, GA</strong><span>Aug 2022 – Dec 2025</span></div>
-      <div>B.S. in Computer Science · GPA 3.81/4.0 · Faculty Honors</div>
-
-      <h3>Experience</h3>
-
-      <div class="row"><strong>Amazon · Software Development Engineer Intern</strong><span>May 2025 – Aug 2025 · Arlington, VA</span></div>
-      <ul>
-        <li>Built an event‑driven firehose notification system for high‑severity tickets across AWS partitions.</li>
-        <li>Shipped with IaC via AWS CDK and CI/CD across multiple regions and stages.</li>
-        <li>Solution serves 250+ engineers, improving visibility and replacing a legacy system.</li>
-      </ul>
-
-      <div class="row"><strong>JHU Applied Physics Laboratory · Agile & Software Engineer Intern</strong><span>May 2023 – Aug 2024 · Laurel, MD</span></div>
-      <ul>
-        <li>Integrated ESP board + pressure sensors (Arduino/C & Python) for deep‑water payload deployments.</li>
-        <li>Implemented backend data analysis with Python, powering Power BI + OpenSearch reports.</li>
-        <li>Developed a C++/SQL Server service and dashboard surfacing $100M+ and 8,000+ projects (2016–2024).</li>
-      </ul>
-
-      <div class="row"><strong>Department of Defense · USUHS · Software Engineer Intern</strong><span>Jun 2022 – Aug 2022 · Bethesda, MD</span></div>
-      <ul>
-        <li>Created Python tools to streamline resource tracking for 5,000+ staff and students.</li>
-        <li>Organized datasets (15,000+ items) for smoother integration into on‑base software.</li>
-      </ul>
-
-      <h3>Projects</h3>
-      <div class="row"><strong>Unity Engine Environment Development</strong><span>Aug 2024 – Dec 2024</span></div>
-      <ul>
-        <li>Procedural street networks (4‑way, T‑junctions, turns) and building generation via polygon meshes.</li>
-        <li>Seed‑based system with varied footprints, facades, elevations, and 3D elements.</li>
-        <li>Creature generation system with swappable parts and curved surfaces.</li>
-      </ul>
-
-      <div class="row"><strong>Spotify Statistics Mobile App · Full‑Stack</strong><span>Jan 2024 – May 2024</span></div>
-      <ul>
-        <li>Android (Java/XML) app using Spotify API for top tracks, artists, albums.</li>
-        <li>Firebase auth + account features; mini games like Wordle, memory, brick breaker using user data.</li>
-      </ul>
-
-      <div class="row"><strong>Low‑Cost Aerial Autonomy · Georgia Tech DARoT Lab</strong><span>Jan 2023 – May 2024</span></div>
-      <ul>
-        <li>Optimized UAV pathing in constrained environments; improved runtime with Python heuristics.</li>
-        <li>Applied ML with pandas/NumPy for experimentation.</li>
-      </ul>
-
-      <h3>Skills</h3>
-      <p><strong>Languages:</strong> Python, Java, C, C++, C#, JavaScript/TypeScript, HTML/CSS, Solidity, GLSL, OpenGL, Assembly, Go</p>
-      <p><strong>Technologies:</strong> Android Studio, Redis, CAD, NumPy, Excel, TensorFlow, GitHub, Figma, Arduino, Unity, DynamoDB, MySQL, OOP, Unix Tools, Photoshop, PyQt/PySide, AWS CDK, Lambda, S3, SQS, CloudFormation, CloudWatch</p>
-      <p><strong>Concepts:</strong> Data Structures & Algorithms, Complexity Analysis, Web‑App Design, MCTS, Software Design, OOD, Unit testing, CI/CD, IaC, Service monitoring & alarming</p>
+  <main class="section resume-viewer">
+  <div class="container">
+    <div class="pdf-toolbar">
+      <h2 class="pdf-title">Résumé</h2>
+      <div class="pdf-actions">
+        <a class="btn" href="assets/Arjun_Bhatia_Resume.pdf" target="_blank" rel="noopener">Open in new tab</a>
+        <a class="btn primary" href="assets/Arjun_Bhatia_Resume.pdf" download>Download PDF</a>
+        <button class="btn" onclick="window.print()">Print</button>
+      </div>
     </div>
-  </main>
+
+    <!-- Primary embed -->
+    <div class="pdf-frame">
+      <object
+        data="assets/Arjun_Bhatia_Resume.pdf#view=FitH"
+        type="application/pdf"
+        aria-label="Arjun K. Bhatia résumé PDF"
+      >
+        <!-- Fallback if PDF can't be embedded -->
+        <iframe
+          src="assets/Arjun_Bhatia_Resume.pdf#view=FitH"
+          title="Arjun K. Bhatia résumé PDF"
+        ></iframe>
+        <p>
+          Your browser can’t display embedded PDFs.
+          <a href="assets/Arjun_Bhatia_Resume.pdf" target="_blank" rel="noopener">Open the résumé</a>
+          or use the download button above.
+        </p>
+      </object>
+    </div>
+  </div>
+</main>
+
 
   <footer>
     <div class="container" style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap">
