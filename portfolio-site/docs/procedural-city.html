@@ -20,9 +20,11 @@
 
   <main class="section">
     <div class="container">
-      <h2>Procedural City Generator (Unity)</h2>
-      <p><strong>Context:</strong> Semester project focusing on designing a seed‑based 3D environment generator with modular meshes and AI‑driven variations.</p>
+      <h2>Procedural Content Generator (Unity)</h2>
+      <p><strong>Context:</strong> Semester project focusing on designing a seed‑based 3D environment and creature generator with modular meshes and AI‑driven variations.</p>
       <p>This document outlines the problem space, design goals, and engineering decisions. It explains the mesh generation pipeline, street graph creation (4‑way, T‑junction, turns, dead ends), and a system for building footprints, facades, and elevations. It also summarizes a creature generation subsystem with swappable parts and curved surfaces.</p>
+      <p>Developed a seed-driven creature generator that automatically produces diverse bodies and palettes; renders distinct creatures per run with only a main random seed as input.
+          Implemented custom curved-surface modeling and swappable body-part variants to achieve variety in geometry, size, and color.</p>
       <h3>Key Design Choices</h3>
       <ul>
         <li>Seed‑driven determinism for reproducible worlds.</li>
@@ -37,7 +39,7 @@
     </div>
     <figure class="doc-media">
         <img
-          src="../assets/pcg.jpg"
+          src="../assets/pcg.png"
           alt="Screenshot of the Unity procedural city with roads and buildings"
           loading="lazy"
         />
