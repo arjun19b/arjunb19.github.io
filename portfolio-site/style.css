@@ -120,4 +120,34 @@ blockquote.tip{margin:14px 0;padding:12px 14px;border-left:4px solid var(--brand
   .resume-viewer .pdf-frame { height: auto; box-shadow: none; border-radius: 0; }
 }
 
+.doc-layout {
+  display: grid;
+  grid-template-columns: 1fr min(35vw, 420px);
+  gap: 2rem;
+  align-items: start;
+}
+
+.doc-media {
+  margin: 0;
+  text-align: center;
+}
+.doc-media img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.1);
+  display: block;
+}
+.doc-media figcaption {
+  font-size: .9rem;
+  color: #666;
+  margin-top: .5rem;
+}
+
+/* Stack on small screens */
+@media (max-width: 900px) {
+  .doc-layout {
+    grid-template-columns: 1fr;
+  }
+}
 
