@@ -150,34 +150,40 @@ blockquote.tip{margin:14px 0;padding:12px 14px;border-left:4px solid var(--brand
     grid-template-columns: 1fr;
   }
 }
+.row-right-img {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
 
-/* Small image on the right of the text */
-.float-right-media {
-  float: right;
-  width: 280px;                 /* adjust size here */
-  margin: 0 0 1rem 1.25rem;     /* gap between image and text */
+.row-copy {
+  flex: 1 1 auto;
+  min-width: 0;          /* prevents overflow with long content */
+}
+
+.right-thumb {
+  margin: 0;
+  flex: 0 0 260px;       /* small fixed width on the right */
   text-align: center;
 }
-.float-right-media img {
+
+.right-thumb img {
   width: 100%;
   height: auto;
+  display: block;
   border-radius: 12px;
   box-shadow: 0 10px 30px rgba(0,0,0,.1);
 }
-.float-right-media figcaption {
+
+.right-thumb figcaption {
   font-size: .85rem;
   color: #666;
   margin-top: .4rem;
 }
 
-/* Clear float so the container wraps correctly */
-.container::after { content: ""; display: table; clear: both; }
-
-/* Stack nicely on mobile */
-@media (max-width: 700px) {
-  .float-right-media {
-    float: none;
-    width: 85%;
-    margin: 0 auto 1rem;
-  }
+/* Mobile: stack */
+@media (max-width: 800px) {
+  .row-right-img { flex-direction: column; }
+  .right-thumb { flex-basis: auto; width: min(85%, 420px); margin-inline: auto; }
 }
+
