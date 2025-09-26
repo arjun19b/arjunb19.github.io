@@ -151,3 +151,34 @@ blockquote.tip{margin:14px 0;padding:12px 14px;border-left:4px solid var(--brand
   }
 }
 
+.row-split {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+.row-copy { flex: 1 1 0; min-width: 0; }
+.side-media {
+  margin: 0;
+  flex: 0 0 min(36vw, 420px);
+  text-align: center;
+}
+.side-media img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.1);
+}
+.side-media figcaption {
+  font-size: .9rem;
+  color: #666;
+  margin-top: .5rem;
+}
+
+/* Stack on small screens */
+@media (max-width: 900px) {
+  .row-split { flex-direction: column; }
+  .side-media { flex-basis: auto; }
+}
+
+
